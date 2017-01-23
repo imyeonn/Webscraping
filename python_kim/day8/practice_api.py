@@ -13,8 +13,7 @@ query = '&query=' + urllib.parse.quote_plus(str(input("검색어를 입력하세
 fullURL = defaultURL + sort + start + display + query
 
 print(fullURL)
-
-file = open('~/Webscraping/python_kim/day8/practice_api.py', 'w', encoding = 'utf-8')
+file = open('/Users/hyeyeonyang/Webscraping/python_kim/day8/practice_api. txt', 'w', encoding = 'utf-8')
 
 headers = {
     'Host' : 'openaip.naver.com',
