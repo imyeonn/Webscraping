@@ -6,6 +6,7 @@ for i in range(1, 6) :
 
         print()
 
+# chp7
 # 가변 매개변수(*: 튜플)
 def merge_string(*text_list):
     result = ' '
@@ -51,3 +52,5 @@ v = variance(mean())
 return math.sqrt(v)
 
 stddev(0, 1, 2)
+
+# chp8
