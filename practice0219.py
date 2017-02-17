@@ -34,3 +34,19 @@ def print_args(*argc, argv):
         print(argv[i])
 
 print_args('arg1', 'arg2', 'arg3', argc=3)
+
+# 중첩함수 질문
+import math
+def stddev(*args):
+    def mean():
+        return sum(args)/len(args)
+
+    def variance(m):
+        total = 0
+        for arg in args:
+            total += (arg -m)**2
+        return total/len(args)-1
+v = variance(mean())
+return math.sqrt(v)
+
+stddev(0, 1, 2)
