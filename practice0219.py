@@ -1,3 +1,4 @@
+# chp6
 # for 질문
 for i in range(1, 6) :
         for j in range(i) :
