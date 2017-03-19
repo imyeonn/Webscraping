@@ -2,8 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import lxml
 
-
-
 def get_true_video_link(target_url):
     response = requests.get(target_url)
     soup = BeautifulSoup(response.text, "lxml")
@@ -15,7 +13,7 @@ def get_true_video_link(target_url):
         play_time = li.find('span', {'class' : 'video-time'}).text
         hits = li.find_all('li')[2].text
         updated_time = li.find_all('li')[3].text
-        true_video_info = {title, video_link, img_link, play_time, hits, updated_time}
+        true_video_info = title, video_link, img_link, play_time, hits, updated_time
         print(true_video_info)
     return true_video_info
 
